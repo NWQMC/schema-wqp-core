@@ -18,21 +18,6 @@ databaseChangeLog:
             relativeToChangelogFile: true
         - rollback: drop table if exists ${WQP_SCHEMA_NAME}.activity_sum cascade;
 
-  - changeSet:
-      author: drsteini
-      id: "create.table.${WQP_SCHEMA_NAME}.activity_sum.partition.biodata"
-      context: external and ci
-      preConditions:
-        - onFail: MARK_RAN
-        - onError: HALT
-        - not:
-          - tableExists:
-              tableName: activity_sum_biodata
-      changes:
-        - sqlFile:
-            path: activitySumBiodata.sql
-            relativeToChangelogFile: true
-        - rollback: drop table if exists ${WQP_SCHEMA_NAME}.activity_sum_biodata cascade;
 
   - changeSet:
       author: drsteini
