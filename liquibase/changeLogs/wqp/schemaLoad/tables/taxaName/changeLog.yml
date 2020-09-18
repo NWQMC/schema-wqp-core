@@ -18,21 +18,6 @@ databaseChangeLog:
             relativeToChangelogFile: true
         - rollback: drop table if exists ${WQP_SCHEMA_NAME}.taxa_name cascade;
 
-  - changeSet:
-      author: drsteini
-      id: "create.table.${WQP_SCHEMA_NAME}.taxa_name.partition.biodata"
-      context: external and ci
-      preConditions:
-        - onFail: MARK_RAN
-        - onError: HALT
-        - not:
-          - tableExists:
-              tableName: taxa_name_biodata
-      changes:
-        - sqlFile:
-            path: taxaNameBiodata.sql
-            relativeToChangelogFile: true
-        - rollback: drop table if exists ${WQP_SCHEMA_NAME}.taxa_name_biodata cascade;
 
   - changeSet:
       author: drsteini
