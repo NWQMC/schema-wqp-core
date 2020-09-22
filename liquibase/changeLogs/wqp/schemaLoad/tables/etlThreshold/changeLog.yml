@@ -33,5 +33,4 @@ databaseChangeLog:
           - expectedResult: "1"
       changes:
         - sql: alter table if exists ${WQP_SCHEMA_NAME}.etl_threshold set logged
-        - rollback: alter table if exists ${WQP_SCHEMA_NAME}.etl_threshold set unlogged
 
