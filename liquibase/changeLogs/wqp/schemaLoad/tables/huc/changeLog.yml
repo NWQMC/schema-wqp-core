@@ -48,7 +48,6 @@ databaseChangeLog:
           - expectedResult: "1"
       changes:
         - sql: alter table if exists ${WQP_SCHEMA_NAME}.huc12nometa set logged
-        - rollback: alter table if exists ${WQP_SCHEMA_NAME}.huc12nometa set unlogged
 
   - changeSet:
       author: eorosz
@@ -65,5 +64,4 @@ databaseChangeLog:
           - expectedResult: "1"
       changes:
         - sql: alter table if exists ${WQP_SCHEMA_NAME}.huc8_conus_hi_ak_pr_dis set logged
-        - rollback: alter table if exists ${WQP_SCHEMA_NAME}.huc8_conus_hi_ak_pr_dis set unlogged
 

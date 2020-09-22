@@ -33,7 +33,6 @@ databaseChangeLog:
           - expectedResult: "1"
       changes:
         - sql: alter table if exists ${WQP_SCHEMA_NAME}.public_srsnames set logged
-        - rollback: alter table if exists ${WQP_SCHEMA_NAME}.public_srsnames set unlogged
 
   - changeSet:
       author: eorosz
@@ -50,5 +49,4 @@ databaseChangeLog:
           - expectedResult: "1"
       changes:
         - sql: alter table if exists ${WQP_SCHEMA_NAME}.public_srsnames_current set logged
-        - rollback: alter table if exists ${WQP_SCHEMA_NAME}.public_srsnames_current set unlogged
 
