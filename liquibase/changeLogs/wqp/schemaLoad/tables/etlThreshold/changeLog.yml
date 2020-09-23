@@ -5,7 +5,7 @@ databaseChangeLog:
 
   - changeSet:
       author: drsteini
-      id: "create.table.${WQP_SCHEMA_NAME}.etl_threshold"
+      id: "create.table.${WQP_SCHEMA_NAME}.etl_threshold.v2"
       preConditions:
         - onFail: MARK_RAN
         - onError: HALT
