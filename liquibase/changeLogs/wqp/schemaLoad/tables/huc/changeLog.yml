@@ -5,7 +5,7 @@ databaseChangeLog:
 
   - changeSet:
       author: drsteini
-      id: "create.table.${WQP_SCHEMA_NAME}.huc8_conus_hi_ak_pr_dis"
+      id: "create.table.${WQP_SCHEMA_NAME}.huc8_conus_hi_ak_pr_dis.v2"
       preConditions:
         - onFail: MARK_RAN
         - onError: HALT
@@ -20,7 +20,7 @@ databaseChangeLog:
 
   - changeSet:
       author: skaymen
-      id: "create.table.${WQP_SCHEMA_NAME}.huc12nometa"
+      id: "create.table.${WQP_SCHEMA_NAME}.huc12nometa.v2"
       preConditions:
         - onFail: MARK_RAN
         - onError: HALT

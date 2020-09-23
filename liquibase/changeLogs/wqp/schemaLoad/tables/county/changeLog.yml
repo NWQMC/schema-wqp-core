@@ -21,7 +21,7 @@ databaseChangeLog:
 
   - changeSet:
       author: drsteini
-      id: "create.table.${WQP_SCHEMA_NAME}.county.partition.nwis"
+      id: "create.table.${WQP_SCHEMA_NAME}.county.partition.nwis.v2"
       context: (external or internal) and ci
       preConditions:
         - onFail: MARK_RAN
@@ -37,7 +37,7 @@ databaseChangeLog:
 
   - changeSet:
       author: drsteini
-      id: "create.table.${WQP_SCHEMA_NAME}.county.partition.stewards"
+      id: "create.table.${WQP_SCHEMA_NAME}.county.partition.stewards.v2"
       context: external and ci
       preConditions:
         - onFail: MARK_RAN
@@ -53,7 +53,7 @@ databaseChangeLog:
 
   - changeSet:
       author: drsteini
-      id: "create.table.${WQP_SCHEMA_NAME}.county.partition.storet"
+      id: "create.table.${WQP_SCHEMA_NAME}.county.partition.storet.v2"
       context: external and ci
       preConditions:
         - onFail: MARK_RAN
@@ -84,7 +84,7 @@ databaseChangeLog:
 
   - changeSet:
       author: ssoper
-      id: "create.table.${WQP_SCHEMA_NAME}.county_geom"
+      id: "create.table.${WQP_SCHEMA_NAME}.county_geom.v2"
       preConditions:
         - onFail: MARK_RAN
         - onError: HALT

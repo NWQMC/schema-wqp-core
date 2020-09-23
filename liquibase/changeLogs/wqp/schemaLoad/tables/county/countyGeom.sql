@@ -1,4 +1,4 @@
-create unlogged table if not exists ${WQP_SCHEMA_NAME}.county_geom
+create table if not exists ${WQP_SCHEMA_NAME}.county_geom
 (fips_county_code                 character varying (3)
 ,county_name                      character varying (256)
 ,geom                             geometry

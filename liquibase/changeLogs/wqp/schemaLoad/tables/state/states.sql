@@ -1,4 +1,4 @@
-create unlogged table if not exists ${WQP_SCHEMA_NAME}.states
+create table if not exists ${WQP_SCHEMA_NAME}.states
 (state                          character varying (26)
 ,state_abrv                     character varying (2)
 ,fipsst                         character varying (2)

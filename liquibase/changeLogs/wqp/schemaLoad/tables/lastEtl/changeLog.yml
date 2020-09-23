@@ -5,7 +5,7 @@ databaseChangeLog:
 
   - changeSet:
       author: drsteini
-      id: "create.table.${WQP_SCHEMA_NAME}.last_etl"
+      id: "create.table.${WQP_SCHEMA_NAME}.last_etl.v2"
       preConditions:
         - onFail: MARK_RAN
         - onError: HALT

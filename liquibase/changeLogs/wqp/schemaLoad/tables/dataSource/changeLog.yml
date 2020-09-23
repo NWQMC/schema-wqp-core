@@ -5,7 +5,7 @@ databaseChangeLog:
 
   - changeSet:
       author: drsteini
-      id: "create.table.${WQP_SCHEMA_NAME}.data_source"
+      id: "create.table.${WQP_SCHEMA_NAME}.data_source.v2"
       preConditions:
         - onFail: MARK_RAN
         - onError: HALT

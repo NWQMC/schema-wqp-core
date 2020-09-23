@@ -21,7 +21,7 @@ databaseChangeLog:
 
   - changeSet:
       author: drsteini
-      id: "create.table.${WQP_SCHEMA_NAME}.activity_sum.partition.nwis"
+      id: "create.table.${WQP_SCHEMA_NAME}.activity_sum.partition.nwis.v2"
       context: (external or internal) and ci
       preConditions:
         - onFail: MARK_RAN
@@ -37,7 +37,7 @@ databaseChangeLog:
 
   - changeSet:
       author: drsteini
-      id: "create.table.${WQP_SCHEMA_NAME}.activity_sum.partition.stewards"
+      id: "create.table.${WQP_SCHEMA_NAME}.activity_sum.partition.stewards.v2"
       context: external and ci
       preConditions:
         - onFail: MARK_RAN
@@ -53,7 +53,7 @@ databaseChangeLog:
 
   - changeSet:
       author: drsteini
-      id: "create.table.${WQP_SCHEMA_NAME}.activity_sum.partition.storet"
+      id: "create.table.${WQP_SCHEMA_NAME}.activity_sum.partition.storet.v2"
       context: external and ci
       preConditions:
         - onFail: MARK_RAN
